@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
 // https://codeforces.com/problemset/problem/732/B
@@ -12,8 +11,16 @@ int32_t main()
     vector<int> a;
     while (cin >> input)
         a.push_back(input);
-    
 
+    int total = 0;
+    for (int i = 1; i < n; i++)
+    {
+        int add = std::max(0, k - (a[i] + a[i - 1]));
+        total += add;
+        a[i] += add;
+    }
 
-    cout << 0;
+    cout << total << '\n';
+    for (auto i : a)
+        cout << i << ' ';
 }
