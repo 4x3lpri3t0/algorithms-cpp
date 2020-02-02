@@ -15,14 +15,12 @@ int32_t main()
     for (int i = 0; i < m; ++i)
         cin >> b[i];
 
-    int minIdxA = 0;
-    for (int i = 0; i < m && minIdxA < n; i++)
+    int idxA = 0;
+    for (int i = 0; i < m && idxA < n; i++)
     {
-        if (b[i] >= a[minIdxA])
-        {
-            minIdxA++;
-        }
+        if (b[i] >= a[idxA])
+            idxA++;
     }
 
-    cout << n - minIdxA;
+    cout << n - idxA;
 }
