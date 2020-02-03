@@ -1,1 +1,0 @@
-[{"input":"3\n123\n321","output":"0\n2"},{"input":"2\n88\n00","output":"2\n0"},{"input":"1\n1\n1","output":"0\n0"},{"input":"3\n534\n432","output":"1\n1"}]
