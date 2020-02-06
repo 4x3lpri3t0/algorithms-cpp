@@ -7,6 +7,13 @@
 
 ## Tricks
 
+### Read int array ('readintarr')
+int a[n];
+for (int i = 0; i < n; i++)
+{
+	cin >> a[i];
+}
+
 ### Sort array
 sort(a, a + SIZE); // (Start at the array, and sort up to the last element in the array)
 
@@ -28,7 +35,7 @@ sort(S.begin(), S.end(), greater<int>());
 		],
 		"body": [
 			"int ${1:a}[${2:n}];",
-			"for (int i = 0; i < ${2:n}; ++i)",
+			"for (int i = 0; i < ${2:n}; i++)",
 			"    cin >> ${1:a}[i];",
             "",
 			"$0"
