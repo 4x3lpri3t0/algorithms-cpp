@@ -3,9 +3,16 @@
 ## Review
 
 ### 1300s
+* A_Party -> DFS, Graph
 * B_Dreamoon_and_WiFi -> Combinatorics
+* B_Vitamins -> Comb/Implementation
 
 ## Tricks
+
+### Read string array (e.g. A_Where_Are_My_Flakes)
+string s, t;
+int k;
+cin >> s >> s >> t >> s >> k; // We're only interested in t and k
 
 ### Read int array ('readintarr')
 int a[n];
@@ -70,10 +77,13 @@ sort(S.begin(), S.end(), greater<int>());
 			"// ${1}",
 			"int32_t main()",
 			"{",
+			"\tios::sync_with_stdio(0);",
 			"\tint ${2:n}, ${3:k};",
 			"\tcin >> ${2:n} >> ${3:k};",
+			"\t",
 			"\t$0",
-			"\tcout << n;",
+			"\t",
+			"\tcout << 0;",
 			"}"
 		],
 		"description": "Competitive Programming template."
