@@ -9,7 +9,12 @@ int32_t main()
     int n, m;
     cin >> n >> m;
 
-    // TODO
-
-    cout << 0;
+    if (n == 1)
+        cout << 1;
+    else if (m > n / 2)
+        cout << m - 1;
+    else if (m < n)
+        cout << m + 1;
+    else
+        cout << m;
 }
