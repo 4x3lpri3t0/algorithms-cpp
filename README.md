@@ -6,6 +6,7 @@
 * A_Party -> DFS, Graph
 * B_Dreamoon_and_WiFi -> Combinatorics
 * B_Vitamins -> Comb/Implementation
+* B_Vanya_and_Books -> Math
 
 ## Tricks
 
