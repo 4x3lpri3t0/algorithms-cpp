@@ -22,6 +22,11 @@ for (int i = 0; i < n; i++)
 	cin >> a[i];
 }
 
+### Get index of char in string
+int idx = str.find(c);
+if (idx != string::npos)
+	cout << "Found";
+
 ### Sort array
 sort(a, a + SIZE); // (Start at the array, and sort up to the last element in the array)
 
