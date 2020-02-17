@@ -8,6 +8,10 @@
 * B_Vitamins -> Comb/Implementation
 * B_Vanya_and_Books -> Math
 
+### 1400s
+* A_Vacations -> DP
+* B_Complete_the_Word -> Greedy, two pointers
+
 ## Tricks
 
 ### Read string array (e.g. A_Where_Are_My_Flakes)
@@ -76,11 +80,11 @@ sort(S.begin(), S.end(), greater<int>());
 			"cpmain"
 		],
 		"body": [
+			"// ${1}",
 			"#include <bits/stdc++.h>",
 			"#define int long long",
 			"using namespace std;",
 			"",
-			"// ${1}",
 			"int32_t main()",
 			"{",
 			"\tios::sync_with_stdio(0);",
