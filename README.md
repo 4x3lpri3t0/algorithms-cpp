@@ -11,8 +11,26 @@
 ### 1400s
 * A_Vacations -> DP
 * B_Complete_the_Word -> Greedy, two pointers
+* B_Litte_Girl_and_Game -> Games/Greedy/Char manipulation
+* C_Given_Length_and_Sum_of_Digits -> Greedy
 
 ## Tricks
+
+### Join vector
+void print_vector(vector<int> v)
+{
+    stringstream ss;
+    for (int i = 0; i < v.size(); i++)
+    {
+        if (i != 0)
+            ss << " ";
+        ss << v[i];
+    }
+    cout << ss.str();
+}
+
+### Init array zeroes
+memset(a, 0, sizeof(a));
 
 ### Read string array (e.g. A_Where_Are_My_Flakes)
 string s, t;
