@@ -39,8 +39,8 @@ int main()
 
         // Convert item to lowercase
         transform(item.begin(), item.end(), item.begin(), ::tolower);
-        // If set contains item, print item:
 
+        // If set contains item:
         if (items.count(item))
         {
             cout << "YOINK" << endl;
