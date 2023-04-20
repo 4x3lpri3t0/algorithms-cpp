@@ -17,6 +17,7 @@
 ## Tricks
 
 ### Join vector
+```cpp
 void print_vector(vector<int> v)
 {
     stringstream ss;
@@ -28,40 +29,56 @@ void print_vector(vector<int> v)
     }
     cout << ss.str();
 }
+```
 
 ### Init array zeroes
+```cpp
 memset(a, 0, sizeof(a));
+```
 
 ### Read string array (e.g. A_Where_Are_My_Flakes)
+```cpp
 string s, t;
 int k;
 cin >> s >> s >> t >> s >> k; // We're only interested in t and k
+```
 
 ### Read int array ('readintarr')
+```cpp
 int a[n];
 for (int i = 0; i < n; i++)
 {
 	cin >> a[i];
 }
+```
 
 ### Get index of char in string
+```cpp
 int idx = str.find(c);
 if (idx != string::npos)
 	cout << "Found";
+```
 
 ### Sort array
+```cpp
 sort(a, a + SIZE); // (Start at the array, and sort up to the last element in the array)
+```
 
 ### Sort vector/string ASC
+```cpp
 sort(S.begin(), S.end());
+```
 
 ### Sort vector/string DESC
+```cpp
 sort(S.begin(), S.end(), greater<int>());
+```
 
 ## Snippets
 
 ### Settings > User Snippets > cpp.json
 
+```json
 {
 	"Competitive Programming - Read Int Array": {
 		"prefix": [
@@ -130,3 +147,4 @@ sort(S.begin(), S.end(), greater<int>());
 	// 	"description": "Log output to console"
 	// }
 }
+```
