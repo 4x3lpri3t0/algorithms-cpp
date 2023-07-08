@@ -4,6 +4,8 @@
     "iostream": "cpp",
     "xtree": "cpp",
     "string_view": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "span": "cpp",
+    "type_traits": "cpp"
   }
 }
