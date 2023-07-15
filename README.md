@@ -2,11 +2,11 @@
 
 ## Disclaimer
 
-Please note that this repository serves as a personal space for experimentation and practice, and is not representative of my professional coding standards. It primarily houses solutions to math problems, algorithms, and competitive programming exercises which I use to enhance my problem-solving capabilities.
+This repository serves as a personal space for experimentation and practice and is not representative of my professional coding standards. It primarily houses solutions to math problems, algorithms, and competitive programming exercises which I use to enhance my problem-solving capabilities.
 
-In this context, I prioritize speed and efficiency over adherence to certain best practices such as meaningful variable naming, function reusability, and code modularity. For instance, in a competitive programming context, it's more common to use concise variables like `TC` or `n` instead of more descriptive ones like `testCases` or `numberOfX`. These solutions are not meant to be production-ready, and are simply a part of my ongoing and relentless learning journey and desire to hone my problem solving skills.
+In this context, I prioritize speed and efficiency over adherence to certain best practices such as meaningful variable naming, function reusability, and code modularity. For instance, in a competitive programming context, it's more common to use concise variables like `TC` or `n` instead of more descriptive ones like `testCases` or `numberOfX`. These solutions are not meant to be production-ready and are simply a part of my ongoing and relentless learning journey and desire to hone my problem-solving skills.
 
-When it comes to actual professional software development, I recognize and adhere to industry-standard practices for maintaining clean, efficient, and maintainable code.
+Regarding actual professional software development, I recognize and adhere to industry-standard practices for maintaining clean, efficient, and maintainable code.
 
 ## Review
 
