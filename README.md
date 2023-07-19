@@ -24,6 +24,27 @@ Regarding actual professional software development, I recognize and adhere to in
 
 ## Tricks
 
+### Output to output.txt
+To redirect the standard input and output streams from your program into a file named `output.txt` (works for both `cout` and `printf`):
+```cpp
+int main()
+{
+    std::streambuf *coutbuf = std::cout.rdbuf();    // Save old buffer
+    char* tempFileName = "output.txt";
+    std::ofstream out(tempFileName);
+    std::cout.rdbuf(out.rdbuf());                   // Redirect std::cout to file
+    freopen(tempFileName, "w", stdout);             // Redirect stdout to file
+
+    // ...
+    // (Your program here)
+    // ...
+
+    std::cout.rdbuf(coutbuf);                       // Restore the original buffer
+    freopen("/dev/tty", "w", stdout);               // Restore stdout to the console
+}
+    
+```
+
 ### Join vector
 ```cpp
 void print_vector(vector<int> v)
