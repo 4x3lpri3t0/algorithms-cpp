@@ -65,6 +65,11 @@ void print_vector(vector<int> v)
 memset(a, 0, sizeof(a));
 ```
 
+### Init bool array (all elements `false`)
+```cpp
+bool myBoolArray[ARRAY_SIZE] = { 0 };
+```
+
 ### Read string array (e.g. A_Where_Are_My_Flakes)
 ```cpp
 string s, t;
