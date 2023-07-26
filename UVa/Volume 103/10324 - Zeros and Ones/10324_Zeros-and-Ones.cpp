@@ -23,7 +23,6 @@ int main()
             }
 
             valid = true;
-
             for (int i = a; i < b; ++i)
                 if (s[i] != s[i + 1])
                     valid = false;
