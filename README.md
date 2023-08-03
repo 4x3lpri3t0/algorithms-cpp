@@ -65,16 +65,31 @@ void print_vector(vector<int> v)
 memset(a, 0, sizeof(a));
 ```
 
-### Init bool array (all elements `false`)
+### Init bool array (set all elements `false`)
 ```cpp
 bool myBoolArray[ARRAY_SIZE] = { 0 };
 ```
 
-### Read string array (e.g. A_Where_Are_My_Flakes)
+### Read string array (e.g. A_Where_Are_My_Flakes.cpp)
 ```cpp
 string s, t;
 int k;
 cin >> s >> s >> t >> s >> k; // We're only interested in t and k
+```
+
+### Read string array with unknown amount of words (e.g. 11586_Train-Tracks.cpp)
+```cpp
+int N;
+scanf("%d", &N);
+getchar();
+while (N--)
+{
+    string s;
+    getline(cin, s); // e.g. MM FF MF FM
+    int len = s.size(); // Unknown length of string array
+    for (int i = 0; i < len; i++)
+    {
+        // DO STUFF ...
 ```
 
 ### Read int array ('readintarr')
