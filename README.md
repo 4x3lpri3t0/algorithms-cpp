@@ -92,6 +92,16 @@ while (N--)
         // DO STUFF ...
 ```
 
+### Read TestCases until TC is 0
+```cpp
+int TC;
+while (cin >> TC, TC != 0)
+{
+    string S;
+    cin >> S;
+    // DO STUFF ...
+```
+
 ### Read int array ('readintarr')
 ```cpp
 int a[n];
