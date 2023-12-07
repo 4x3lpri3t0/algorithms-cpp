@@ -11,6 +11,7 @@ Regarding actual professional software development, I recognize and adhere to in
 ## Review
 
 ### 1300s
+* A_Cut_Ribbon -> DP
 * A_Party -> DFS, Graph
 * B_Dreamoon_and_WiFi -> Combinatorics
 * B_Vitamins -> Comb/Implementation
