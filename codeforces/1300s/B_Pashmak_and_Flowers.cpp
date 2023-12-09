@@ -1,8 +1,9 @@
+// https://codeforces.com/problemset/problem/459/B
+// With sorting: https://codeforces.com/contest/459/submission/7460021
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;
-// https://codeforces.com/problemset/problem/459/B
-// With sorting: https://codeforces.com/contest/459/submission/7460021
+
 int32_t main()
 {
     ios::sync_with_stdio(0);

@@ -1,8 +1,8 @@
+// https://codeforces.com/problemset/problem/777/B
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;
 
-// https://codeforces.com/problemset/problem/777/B
 int32_t main()
 {
     int n;

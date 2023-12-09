@@ -1,7 +1,7 @@
+// https://codeforces.com/problemset/problem/509/B
 #include <bits/stdc++.h>
 using namespace std;
 
-// https://codeforces.com/problemset/problem/509/B
 int main()
 {
     int n, k;

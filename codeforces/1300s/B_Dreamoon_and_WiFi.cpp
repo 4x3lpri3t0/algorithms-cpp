@@ -1,7 +1,7 @@
+// https://codeforces.com/problemset/problem/476/B
 #include <bits/stdc++.h>
 using namespace std;
 
-// https://codeforces.com/problemset/problem/476/B
 int diffAB = 0, c = 0, t = 0;
 
 void testa(string &str, int i, int pos)

@@ -1,7 +1,7 @@
+// https://codeforces.com/problemset/problem/519/C
 #include <bits/stdc++.h>
 using namespace std;
 
-// https://codeforces.com/problemset/problem/519/C
 int main()
 {
     ios::sync_with_stdio(0);
