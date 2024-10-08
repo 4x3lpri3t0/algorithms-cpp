@@ -1,5 +1,5 @@
 // https://onlinejudge.org/external/115/11507.pdf
-#include <cstdio>
+#include <bits/stdc++.h>
 using namespace std;
 
 bool change(char cur, char c1, char c2)

@@ -1,6 +1,5 @@
-#include <cstdio>
-#include <cstring>
-#include <iostream>
+// https://onlinejudge.org/external/101/10141.pdf
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()

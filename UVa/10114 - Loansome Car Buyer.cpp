@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+// https://onlinejudge.org/external/101/10114.pdf
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()

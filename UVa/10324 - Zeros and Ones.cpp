@@ -1,5 +1,5 @@
 // https://onlinejudge.org/external/103/10324.pdf
-#include <cstdio>
+#include <bits/stdc++.h>
 
 int main()
 {

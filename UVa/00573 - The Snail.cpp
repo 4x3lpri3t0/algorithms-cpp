@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-
     /*
     H is the height of the well
     U is the distance the snail can climb each day
@@ -35,6 +34,7 @@ int main()
                 break;
             climbed -= D;
         }
+
         if (climbed > H)
             cout << "success on day " << day;
         else

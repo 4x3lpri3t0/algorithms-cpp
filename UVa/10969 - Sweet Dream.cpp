@@ -1,7 +1,5 @@
 // https://onlinejudge.org/external/109/10919.pdf
-#include <iostream>
-#include <string>
-#include <map>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()

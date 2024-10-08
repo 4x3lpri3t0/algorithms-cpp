@@ -1,4 +1,5 @@
-#include <stdio.h>
+// https://onlinejudge.org/external/1/100.pdf
+#include <bits/stdc++.h>
 
 /* return number of elements in the 3n+1 cycle for m */
 int cycle(int m)

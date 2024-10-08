@@ -28,7 +28,7 @@ int main()
             if (nPeople == 0)
                 continue;
 
-            int gift = spentMoney / nPeople;
+            int gift = spentMoney / nPeople; // Rounded down
             balance[name] -= gift * nPeople;
             for (size_t j = 0; j < nPeople; ++j)
             {

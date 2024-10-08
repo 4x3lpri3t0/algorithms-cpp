@@ -1,5 +1,5 @@
 // https://onlinejudge.org/external/116/11683.pdf
-#include <cstdio>
+#include <bits/stdc++.h>
 
 int wantedSize[10010];
 

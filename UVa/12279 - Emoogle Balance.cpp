@@ -1,4 +1,5 @@
-#include <cstdio>
+// https://onlinejudge.org/external/122/12279.pdf
+#include <bits/stdc++.h>
 
 int main()
 {

@@ -1,4 +1,4 @@
-// https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=98
+// https://onlinejudge.org/external/1/162.pdf
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;
@@ -24,7 +24,7 @@ int32_t main()
 				return 0;
 
 			// Evaluate card (based on "value to cover")
-			switch(card[1])
+			switch (card[1])
 			{
 				case 'J':
 					players[turn].push_front(1);
