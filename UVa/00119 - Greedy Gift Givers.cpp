@@ -1,22 +1,20 @@
 // https://onlinejudge.org/external/1/119.pdf
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()
 {
-    size_t T = 1;
     size_t N;
+    bool firstCase = true;
     while (cin >> N)
     {
         map<string, int> balance;
-        vector<string> names;
+        vector<string> names(N);
+
         for (size_t i = 0; i < N; i++)
         {
-            string name;
-            cin >> name;
-            balance[name] = 0;
-            names.push_back(name);
+            cin >> names[i];
+            balance[names[i]] = 0; // Init
         }
 
         for (size_t i = 0; i < N; i++)
@@ -25,25 +23,28 @@ int main()
             cin >> name;
             int spentMoney, nPeople;
             cin >> spentMoney >> nPeople;
-            if (nPeople == 0)
-                continue;
 
-            int gift = spentMoney / nPeople; // Rounded down
-            balance[name] -= gift * nPeople;
-            for (size_t j = 0; j < nPeople; ++j)
+            if (nPeople > 0)
             {
-                cin >> name;
-                balance[name] += gift;
+                int gift = spentMoney / nPeople;
+                balance[name] -= gift * nPeople;
+                for (size_t j = 0; j < nPeople; j++)
+                {
+                    cin >> name;
+                    balance[name] += gift;
+                }
             }
         }
 
-        if (T++ > 1)
+        if (!firstCase)
             cout << endl;
+        firstCase = false;
 
-        for (size_t i = 0; i < N; i++)
-            cout << names[i]
-                 << " "
-                 << balance[names[i]]
-                 << endl;
+        for (const auto& name : names)
+        {
+            cout << name << " " << balance[name] << endl;
+        }
     }
+
+    return 0;
 }

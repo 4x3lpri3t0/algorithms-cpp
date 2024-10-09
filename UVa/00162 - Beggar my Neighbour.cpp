@@ -1,9 +1,8 @@
 // https://onlinejudge.org/external/1/162.pdf
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
-int32_t main()
+int main()
 {
     ios_base::sync_with_stdio(0);
 	cin.tie(0);
