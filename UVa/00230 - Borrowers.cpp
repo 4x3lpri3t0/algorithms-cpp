@@ -6,7 +6,7 @@ struct Book
 {
     string title, author;
 
-    inline bool operator<(const Book& other) const
+    inline bool operator<(const Book &other) const
     {
         if (author != other.author)
             return author < other.author;
@@ -15,7 +15,7 @@ struct Book
     }
 };
 
-void ReadInBooks(vector<Book>& allBooks)
+void ReadInBooks(vector<Book> &allBooks)
 {
     string temp;
 
@@ -53,7 +53,12 @@ void ReadInBooks(vector<Book>& allBooks)
     }
 }
 
-enum bookStatusEnum { available, borrowed, returned };
+enum bookStatusEnum
+{
+    available,
+    borrowed,
+    returned
+};
 
 int main()
 {

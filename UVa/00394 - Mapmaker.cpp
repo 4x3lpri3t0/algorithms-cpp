@@ -9,7 +9,7 @@ public:
     int size;
     string name;
     int dimension;
-    int C0; // Adjusted BASE address (accounts for the lower bounds of each dimension)
+    int C0;        // Adjusted BASE address (accounts for the lower bounds of each dimension)
     vector<int> C; // Contiguous physical addresses
     vector<int> upperBound;
     vector<int> lowerBound;
@@ -33,7 +33,7 @@ public:
             C[i] = C[i + 1] * (upperBound[i + 1] - lowerBound[i + 1] + 1);
             C0 -= (C[i] * lowerBound[i]);
         }
-        
+
         return;
     }
 };

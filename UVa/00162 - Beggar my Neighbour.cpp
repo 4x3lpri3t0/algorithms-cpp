@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    ios_base::sync_with_stdio(0);
+	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 	string card;
 	while (1)
@@ -12,8 +12,8 @@ int main()
 		// Init
 		int turn = 0;
 		vector<list<int>> players(2);
-		
-        // Read
+
+		// Read
 		for (int i = 0; i < 52; ++i, turn = !turn)
 		{
 			cin >> card;
@@ -25,33 +25,33 @@ int main()
 			// Evaluate card (based on "value to cover")
 			switch (card[1])
 			{
-				case 'J':
-					players[turn].push_front(1);
-					break;
-				case 'Q':
-					players[turn].push_front(2);
-					break;
-				case 'K':
-					players[turn].push_front(3);
-					break;
-				case 'A':
-					players[turn].push_front(4);
-					break;
-				default:
-					players[turn].push_front(0);
+			case 'J':
+				players[turn].push_front(1);
+				break;
+			case 'Q':
+				players[turn].push_front(2);
+				break;
+			case 'K':
+				players[turn].push_front(3);
+				break;
+			case 'A':
+				players[turn].push_front(4);
+				break;
+			default:
+				players[turn].push_front(0);
 			}
 		}
 
 		list<int> gameDeck;
 		bool cycle = false;
-		
-        // Continue the game (while current player has cards)
+
+		// Continue the game (while current player has cards)
 		while (!players[turn].empty())
 		{
 			// Get value of current card
 			int currentCard = players[turn].front();
-			
-            // Delete card from player's deck
+
+			// Delete card from player's deck
 			players[turn].pop_front();
 
 			// Insert current card on game's deck
@@ -84,20 +84,20 @@ int main()
 				// Face card?
 				if (card)
 				{
-                    // Change current player and card
+					// Change current player and card
 					turn = !turn;
 					currentCard = card;
 				}
 				else
-                {
-				    // Normal card - just decrease the value of current card
+				{
+					// Normal card - just decrease the value of current card
 					--currentCard;
-                }
+				}
 			}
-			
+
 			if (cycle)
 			{
-                // Was a cycle -> insert cards to last player that played a face card
+				// Was a cycle -> insert cards to last player that played a face card
 				cycle = false;
 				turn = !turn;
 				while (!gameDeck.empty())
@@ -115,5 +115,5 @@ int main()
 			cout << "2 " << setw(2) << players[0].size() << "\n";
 	}
 
-	return  0;    
+	return 0;
 }

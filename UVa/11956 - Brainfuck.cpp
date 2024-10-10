@@ -47,7 +47,7 @@ int main()
                     mem[current] = 255;
             }
         }
-        
+
         printf("Case %d:", t);
         for (int i = 0; i < 100; ++i)
             printf(" %02X", mem[i]);

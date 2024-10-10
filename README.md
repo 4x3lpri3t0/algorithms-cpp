@@ -45,7 +45,6 @@ int main()
     std::cout.rdbuf(coutbuf);                       // Restore the original buffer
     freopen("/dev/tty", "w", stdout);               // Restore stdout to the console
 }
-    
 ```
 
 ### Join vector

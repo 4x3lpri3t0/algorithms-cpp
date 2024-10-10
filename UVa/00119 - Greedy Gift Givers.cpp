@@ -40,7 +40,7 @@ int main()
             cout << endl;
         firstCase = false;
 
-        for (const auto& name : names)
+        for (const auto &name : names)
         {
             cout << name << " " << balance[name] << endl;
         }

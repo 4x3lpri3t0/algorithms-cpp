@@ -1,4 +1,5 @@
 {
+  "editor.formatOnSave": true,
   "code-runner.executorMap": {
     "javascript": "nodejs",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",

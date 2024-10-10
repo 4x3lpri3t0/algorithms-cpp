@@ -11,12 +11,12 @@ int main()
         char command[10];
         scanf("%s", command);
 
-        if (command[0] == 'd')  // Donate
+        if (command[0] == 'd') // Donate
         {
             scanf("%d", &K);
             sum += K;
         }
-        else                    // Report
+        else // Report
         {
             printf("%d\n", sum);
         }
