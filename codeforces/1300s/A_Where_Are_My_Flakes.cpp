@@ -9,11 +9,11 @@ int main()
 
     int l = 1, r = n;
 
-    string s, t;
+    string _, t;
     int k;
     while (m--)
     {
-        cin >> s >> s >> t >> s >> k;
+        cin >> _ >> _ >> t >> _ >> k;
 
         if (t == "right")
             l = max(l, k + 1);
