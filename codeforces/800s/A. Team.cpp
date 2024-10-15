@@ -8,7 +8,7 @@ int main()
     int T, ans = 0;
     cin >> T;
 
-    while ( T-- > 0)
+    while (T-- > 0)
     {
         int count = 0;
 

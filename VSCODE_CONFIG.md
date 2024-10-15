@@ -95,10 +95,28 @@
 
 ## Snippets
 
-### Settings > User Snippets > `cpp.json`
+### Settings (F1) > Snippets: Configure Snippets
 
+`cpp.json`
 ```json
 {
+	"Competitive Programming - Read String Array": {
+		"prefix": [
+			"readstringarr",
+			"stringarrread"
+		],
+		"body": [
+			"vector<string> ${1:a};",
+			"for (size_t i = 0; i < ${2:n}; i++)",
+			"{",
+			"\tstring name;",
+			"\tcin >> name;",
+			"\t${1:a}.push_back(name);",
+			"}",
+			"$0"
+		],
+		"description": "Competitive Programming template."
+	},
 	"Competitive Programming - Read Int Array": {
 		"prefix": [
 			"readintarr",
@@ -108,7 +126,7 @@
 			"int ${1:a}[${2:n}];",
 			"for (int i = 0; i < ${2:n}; i++)",
 			"    cin >> ${1:a}[i];",
-            "",
+			"",
 			"$0"
 		],
 		"description": "Competitive Programming template."
@@ -123,7 +141,7 @@
 			"vector<int> a;",
 			"while (cin >> input)",
 			"    a.push_back(input);",
-            "",
+			"",
 			"$0"
 		],
 		"description": "Competitive Programming template."
@@ -136,12 +154,12 @@
 		"body": [
 			"// ${1}",
 			"#include <bits/stdc++.h>",
-			"#define int long long",
 			"using namespace std;",
 			"",
-			"int32_t main()",
+			"main()",
 			"{",
 			"\tios::sync_with_stdio(0);",
+			"\tcin.tie(0);",
 			"\tint ${2:n}, ${3:k};",
 			"\tcin >> ${2:n} >> ${3:k};",
 			"\t",
@@ -150,7 +168,28 @@
 			"\tcout << 0;",
 			"}"
 		],
-		"description": "Competitive Programming template."
+		"description": "Competitive Programming (main) template."
+	},
+	"UVa - Main": {
+		"prefix": [
+			"mainuva",
+			"uvamain"
+		],
+		"body": [
+			"// ${1}",
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"main()",
+			"{",
+			"\tint ${2:N}, ${3:k};",
+			"\tcin >> ${2:N} >> ${3:k};",
+			"\t",
+			"\t$0",
+			"\t",
+			"}"
+		],
+		"description": "UVa (main) template."
 	}
 }
 ```

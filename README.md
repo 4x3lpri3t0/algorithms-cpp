@@ -30,6 +30,27 @@ int main()
 }
 ```
 
+### Fast input hack
+```cpp
+// https://www.geeksforgeeks.org/fast-io-for-competitive-programming/
+ios::sync_with_stdio(0);
+cin.tie(0);
+// (...)
+```
+
+### int as long hack
+```cpp
+// **DO NOT do this in production code**
+#define int long long
+// Then if you need to use an actual int, use int32_t (e.g. `int32_t main()`)
+```
+
+### Adjacency List (graph representation)
+```cpp
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
+```
+
 ### Join vector
 ```cpp
 void print_vector(vector<int> v)
@@ -109,7 +130,7 @@ if (idx != string::npos)
 
 ### Sort array
 ```cpp
-sort(a, a + SIZE); // (Start at the array, and sort up to the last element in the array)
+sort(a, a + SIZE); // (sort up to the last element in the array)
 ```
 
 ### Sort vector/string ASC
