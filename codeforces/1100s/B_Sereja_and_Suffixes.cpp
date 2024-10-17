@@ -1,9 +1,8 @@
 // https://codeforces.com/problemset/problem/368/B
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
-int32_t main()
+main()
 {
     int n, m;
     cin >> n >> m;
@@ -19,7 +18,6 @@ int32_t main()
     for (int i = n - 1; i >= 0; i--)
     {
         intSet.insert(a[i]);
-
         dp[i] = intSet.size();
     }
 

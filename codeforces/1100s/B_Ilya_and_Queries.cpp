@@ -1,9 +1,8 @@
 // https://codeforces.com/problemset/problem/313/B
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
-int32_t main()
+main()
 {
     string s;
     cin >> s;

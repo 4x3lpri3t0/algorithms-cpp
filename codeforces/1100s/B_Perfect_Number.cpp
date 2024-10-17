@@ -13,7 +13,7 @@ int sumOfDigits(int num)
     return ans;
 }
 
-int main()
+main()
 {
     int k, n;
     cin >> k;
