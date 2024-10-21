@@ -1,9 +1,8 @@
 // https://codeforces.com/problemset/problem/387/B
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
-int32_t main()
+main()
 {
     int n, m;
     cin >> n >> m;
@@ -16,11 +15,15 @@ int32_t main()
         cin >> b[i];
 
     int idxA = 0;
-    for (int i = 0; i < m && idxA < n; i++)
+    int idxB = 0;
+    for (; idxB < m && idxA < n; idxB++)
     {
-        if (b[i] >= a[idxA])
+        if (b[idxB] >= a[idxA])
             idxA++;
     }
 
     cout << n - idxA;
 }
+
+// greedy
+// two pointers

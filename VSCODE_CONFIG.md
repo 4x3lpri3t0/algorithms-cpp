@@ -154,18 +154,16 @@
 		"body": [
 			"// ${1}",
 			"#include <bits/stdc++.h>",
+			"#define int long long",
 			"using namespace std;",
 			"",
 			"main()",
 			"{",
 			"\tios::sync_with_stdio(0);",
 			"\tcin.tie(0);",
-			"\tint ${2:n}, ${3:k};",
-			"\tcin >> ${2:n} >> ${3:k};",
 			"\t",
-			"\t$0",
-			"\t",
-			"\tcout << 0;",
+			"\tint n;",
+			"\tcin >> n;${0}",
 			"}"
 		],
 		"description": "Competitive Programming (main) template."

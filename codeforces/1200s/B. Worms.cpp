@@ -24,7 +24,6 @@ int main()
         int q;
         cin >> q;
 
-        // Binary Search
         int l = 0;
         int r = n;
         while (l + 1 < r)
@@ -39,3 +38,5 @@ int main()
         cout << r << endl;
     }
 }
+
+// binary search

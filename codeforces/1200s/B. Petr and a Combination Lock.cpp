@@ -5,32 +5,31 @@ using namespace std;
 vector<int> a;
 int n;
 
-bool isZero(int pos, int accum)
+bool isZero(int idx, int accum)
 {
-    pos++;
-
-    if (pos >= n)
+    idx++;
+    if (idx >= n)
+    {
         if (accum % 360 == 0)
             return true;
         else
             return false;
+    }
 
-    return isZero(pos, accum + a[pos]) || isZero(pos, accum - a[pos]);
+    return isZero(idx, accum + a[idx]) || isZero(idx, accum - a[idx]);
 }
 
-int main()
+main()
 {
     cin >> n;
-
-    int i = 0;
-    while (i < n)
+    for (int i = 0; i < n; i++)
     {
         int input;
         cin >> input;
         a.push_back(input);
-
-        i++;
     }
 
     cout << (isZero(-1, 0) ? "YES" : "NO");
 }
+
+// dp

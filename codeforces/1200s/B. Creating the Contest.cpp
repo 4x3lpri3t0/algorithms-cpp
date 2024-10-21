@@ -1,9 +1,8 @@
 // https://codeforces.com/problemset/problem/1029/B
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
-int32_t main()
+main()
 {
     int n;
     cin >> n;
@@ -13,18 +12,20 @@ int32_t main()
     while (cin >> input)
         a.push_back(input);
 
-    int maxSeq = 1;
-    int curSeq = 1;
-
+    int totalMax = 1;
+    int localMax = 1;
     for (int i = 1; i < a.size(); i++)
     {
         if (a[i] <= a[i - 1] * 2)
-            curSeq++;
+            localMax++;
         else
-            curSeq = 1;
+            localMax = 1;
 
-        maxSeq = max(curSeq, maxSeq);
+        totalMax = max(localMax, totalMax);
     }
 
-    cout << maxSeq;
+    cout << totalMax;
 }
+
+// dp
+// greedy

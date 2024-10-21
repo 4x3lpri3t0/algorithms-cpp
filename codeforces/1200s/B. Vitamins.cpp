@@ -4,7 +4,7 @@ using namespace std;
 const int INF = 1e9;
 
 int n;
-map<string, int> was;
+map<string, int> vtp; // Vitamine to Price
 
 inline void read()
 {
@@ -15,32 +15,32 @@ inline void read()
         string s;
         cin >> c >> s;
         sort(s.begin(), s.end()); // e.g. "BAC" -> "ABC"
-        if (was.count(s))
-            was[s] = min(was[s], c);
+        if (vtp.count(s))
+            vtp[s] = min(vtp[s], c);
         else
-            was[s] = c;
+            vtp[s] = c;
     }
 }
 
 inline int getC(string a, string b)
 {
-    if (!was.count(a) || !was.count(b))
+    if (!vtp.count(a) || !vtp.count(b))
     {
         return INF;
     }
-    return was[a] + was[b];
+    return vtp[a] + vtp[b];
 }
 
 inline void solve()
 {
     int ans = INF;
-    if (was.count("A") && was.count("B") && was.count("C"))
+    if (vtp.count("A") && vtp.count("B") && vtp.count("C"))
     {
-        ans = was["A"] + was["B"] + was["C"];
+        ans = vtp["A"] + vtp["B"] + vtp["C"];
     }
-    if (was.count("ABC"))
+    if (vtp.count("ABC"))
     {
-        ans = min(ans, was["ABC"]);
+        ans = min(ans, vtp["ABC"]);
     }
     ans = min(ans, getC("AB", "C"));
     ans = min(ans, getC("A", "BC"));
