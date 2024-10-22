@@ -1,11 +1,8 @@
 // https://codeforces.com/problemset/problem/189/A
 #include <bits/stdc++.h>
-
-#define int long long
-
 using namespace std;
 
-int32_t main()
+main()
 {
     ios::sync_with_stdio(0);
 
@@ -34,3 +31,5 @@ int32_t main()
 
     cout << dp[n];
 }
+
+// dp

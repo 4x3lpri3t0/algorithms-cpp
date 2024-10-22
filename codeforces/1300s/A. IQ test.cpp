@@ -2,9 +2,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+main()
 {
     ios::sync_with_stdio(0);
+
     int n;
     cin >> n;
 
@@ -33,7 +34,7 @@ int main()
     }
 
     // Output
-    if ( evens == 1 )
+    if (evens == 1)
         cout << evenNumberIndex << endl;
     else
         cout << oddNumberIndex << endl;

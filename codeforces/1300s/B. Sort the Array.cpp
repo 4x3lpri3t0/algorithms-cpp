@@ -1,6 +1,5 @@
 // https://codeforces.com/problemset/problem/451/B
 #include <bits/stdc++.h>
-
 using namespace std;
 
 const int N = 1e5 + 10;
@@ -10,7 +9,7 @@ int a[N], b[N];
 int main()
 {
     scanf("%d", &n);
-    
+
     // Init original and aux arrays
     for (i = 0; i < n; i++)
     {
@@ -57,3 +56,5 @@ int main()
     printf("yes %d %d", l + 1, r + 1);
     return 0;
 }
+
+// TODO

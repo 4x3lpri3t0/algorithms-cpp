@@ -1,10 +1,11 @@
-// https://codeforces.com/problemset/problem/25/A
+// https://codeforces.com/problemset/problem/4/C
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+main()
 {
     ios::sync_with_stdio(0);
+
     int n;
     cin >> n;
 

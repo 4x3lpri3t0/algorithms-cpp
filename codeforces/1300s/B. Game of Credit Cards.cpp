@@ -3,7 +3,7 @@
 #define int long long
 using namespace std;
 
-int32_t main()
+main()
 {
     int n;
     string S, M;
@@ -13,19 +13,15 @@ int32_t main()
     sort(S.begin(), S.end(), greater<int>());
     sort(M.begin(), M.end(), greater<int>());
 
-    // Accum if s2[i] < s1[i]
+    // Minimize Ls
     int flicksReceived = 0;
     int maxIdx = 0;
     for (int i = 0; i < n; i++)
     {
         if (M[maxIdx] >= S[i])
-        {
             maxIdx++;
-        }
         else
-        {
             flicksReceived++;
-        }
     }
 
     cout << flicksReceived << "\n";
@@ -33,6 +29,7 @@ int32_t main()
     int flicksGiven = 0;
     maxIdx = 0;
 
+    // Maximize Ws
     for (int i = 0; i < n; i++)
     {
         if (M[maxIdx] > S[i])

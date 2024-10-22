@@ -7,6 +7,7 @@ int m, s;
 int main()
 {
     ios::sync_with_stdio(0);
+
     cin >> m >> s;
 
     // Smallest
@@ -22,16 +23,18 @@ int main()
         return 0;
     }
 
-    string s1, s2;
+    string res1, res2;
     int m1 = 9 * m - s, m2 = s;
     for (int i = 0; i < m; i++)
     {
-        int t = min(9 - (i == 0), m1);
-        s1 += '9' - t;
-        m1 -= t;
-        int u = min(9, m2);
-        s2 += '0' + u;
-        m2 -= u;
+        int d1 = min(9 - (i == 0), m1);
+        res1 += '9' - d1;
+        m1 -= d1;
+
+        int d2 = min(9, m2);
+        res2 += '0' + d2;
+        m2 -= d2;
     }
-    cout << s1 << ' ' << s2 << endl;
+
+    cout << res1 << ' ' << res2 << endl;
 }

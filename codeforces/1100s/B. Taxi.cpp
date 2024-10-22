@@ -3,15 +3,15 @@
 
 using namespace std;
 
-int n, t;
+int n, totalCount;
 int a[5];
 int main()
 {
     cin >> n;
     while (n--)
     {
-        cin >> t;
-        a[t]++; // Count occurrence of cardinality of groups
+        cin >> totalCount;
+        a[totalCount]++; // Count occurrence of cardinality of groups
     }
 
     int ans = a[4];

@@ -2,9 +2,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+main()
 {
     ios::sync_with_stdio(0);
+
     int a, b;
     cin >> a >> b;
 
@@ -13,3 +14,6 @@ int main()
     else
         cout << (a + b) / 3;
 }
+
+// math
+// number theory

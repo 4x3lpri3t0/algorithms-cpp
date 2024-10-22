@@ -7,10 +7,8 @@ int main()
     int n, m;
     cin >> n >> m;
 
-    int l = 1, r = n;
-
     string _, t;
-    int k;
+    int k, l = 1, r = n;
     while (m--)
     {
         cin >> _ >> _ >> t >> _ >> k;
@@ -21,5 +19,6 @@ int main()
             r = min(r, k - 1);
     }
 
-    cout << (r - l + 1 > 0 ? r - l + 1 : -1);
+    int diff = r - l + 1;
+    cout << (diff > 0 ? diff : -1);
 }

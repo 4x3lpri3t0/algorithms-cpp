@@ -45,6 +45,13 @@ cin.tie(0);
 // Then if you need to use an actual int, use int32_t (e.g. `int32_t main()`)
 ```
 
+### Dynamic Programming
+```cpp
+int dp[n + 1];
+memset(dp, -1, sizeof(dp));
+dp[0] = 0;
+```
+
 ### Adjacency List (graph representation)
 ```cpp
 typedef pair<int, int> ii;

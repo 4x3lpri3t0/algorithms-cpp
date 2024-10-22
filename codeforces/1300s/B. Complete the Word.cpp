@@ -53,9 +53,10 @@ int main()
         // Init with zeroes
         memset(cnt, 0, sizeof(cnt));
 
+        // Count char appearance
         for (int j = i; j <= i + 25; j++)
         {
-            cnt[s[j] - 'A']++; // Increment appearance counter
+            cnt[s[j] - 'A']++;
         }
 
         if (!is_valid_substr())
