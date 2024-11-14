@@ -6,6 +6,8 @@ This repository serves as a personal space for experimentation and practice, and
 
 In this context, I prioritize developer speed and efficiency over strict adherence to certain best practices, such as meaningful variable naming, function reusability, and code modularity. For instance, in competitive programming, it is common to use concise variable names like `TC` or `n` instead of more descriptive ones like `testCases` or `numberOfX`. These solutions are not intended to be production-ready; rather, they are part of my ongoing journey to hone my problem-solving skills. In actual professional software development, I recognize and adhere to industry-standard practices for maintaining clean, efficient, and maintainable code.
 
+**Do NOT use `#using namespace std;` in production!** For small programs (especially in competitive programming) `#using namespace std;` can speed up development and improve readability by reducing verbosity. In these contexts, the chance of name conflicts is lower, and the benefits of quick syntax outweigh the costs.
+
 **Do NOT use `#include <bits/stdc++.h>` in production!** This directive is an optimization meant solely for competitive programming contests, designed to save developer time at the expense of a negligible increase in compilation time. It includes ALL C++ STL libraries, which you most likely do NOT want. Additionally, it is specific to GCC and may not be available on other C++ compilers. In production environments, maintaining control over the libraries you include is crucial for clarity, performance, and maintainability.
 
 The use of `#define int long long` is also a poor practice that should not be applied in production.
@@ -40,9 +42,9 @@ cin.tie(0);
 
 ### int as long hack
 ```cpp
-// **DO NOT do this in production code**
+// **DO NOT use this for production code**
 #define int long long
-// Then if you need to use an actual int, use int32_t (e.g. `int32_t main()`)
+// Then if you also need to use an actual int as part of the same exercise, use int32_t (e.g. `int32_t main()`)
 ```
 
 ### Dynamic Programming
