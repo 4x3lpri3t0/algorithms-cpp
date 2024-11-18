@@ -9,10 +9,10 @@ int main()
     int n, x;
     cin >> n;
 
-    while ( n-- > 0)
+    while (n-- > 0)
     {
         cin >> operation;
-        
+
         // Check if operation is ++X or X++
         if (operation[1] == '+')
         {

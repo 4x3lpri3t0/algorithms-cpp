@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
     ios::sync_with_stdio(0);
-    
+
     string username;
     cin >> username;
-    
+
     set<char> uniqueChars;
     for (int i = 0; i < username.length(); i++)
     {

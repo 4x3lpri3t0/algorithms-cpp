@@ -10,7 +10,7 @@ In this context, I prioritize developer speed and efficiency over strict adheren
 
 **Do NOT use `#include <bits/stdc++.h>` in production!** This directive is an optimization meant solely for competitive programming contests, designed to save developer time at the expense of a negligible increase in compilation time. It includes ALL C++ STL libraries, which you most likely do NOT want. Additionally, it is specific to GCC and may not be available on other C++ compilers. In production environments, maintaining control over the libraries you include is crucial for clarity, performance, and maintainability.
 
-The use of `#define int long long` is also a poor practice that should not be applied in production.
+The indiscriminate use of macros like `#define int long long` is also a poor practice that should not be applied in production.
 
 ## Competitive Programming Tricks
 
@@ -40,7 +40,7 @@ cin.tie(0);
 // (...)
 ```
 
-### int as long hack
+### int as long (hack)
 ```cpp
 // **DO NOT use this for production code**
 #define int long long
@@ -83,6 +83,18 @@ memset(a, 0, sizeof(a));
 ### Init bool array (set all elements `false`)
 ```cpp
 bool myBoolArray[ARRAY_SIZE] = { 0 };
+```
+
+### Init matrix
+```cpp
+cin >> n >> m;
+vector<string> res(n);
+for (int i = 0; i < n; i++)
+{
+    string row;
+    cin >> row;
+    res.push_back(row);
+}
 ```
 
 ### Read string array + ignore some words (e.g. A_Where_Are_My_Flakes.cpp)
