@@ -155,6 +155,7 @@
 			"// ${1}",
 			"// DISCLAIMER: This is NOT production-quality code.",
 			"#include <bits/stdc++.h>",
+			"#define Error {cout<<-1;return 0;}",
 			"#define int long long",
 			"using namespace std;",
 			"",
