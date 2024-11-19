@@ -153,6 +153,7 @@
 		],
 		"body": [
 			"// ${1}",
+			"// DISCLAIMER: This is NOT production-quality code.",
 			"#include <bits/stdc++.h>",
 			"#define int long long",
 			"using namespace std;",

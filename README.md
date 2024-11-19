@@ -163,3 +163,17 @@ sort(S.begin(), S.end());
 ```cpp
 sort(S.begin(), S.end(), greater<int>());
 ```
+
+### (STL) Max Element / Min Element (e.g. B. Pashmak and Flowers.cpp)
+```cpp
+int mx = *max_element(a, a + n);
+int mn = *min_element(a, a + n);
+```
+
+### (STL) Permutations (e.g. B. Shower Line.cpp)
+```cpp
+int line[N] = { ... };
+do {
+    // (...)
+} while (next_permutation(line, line + N));
+```

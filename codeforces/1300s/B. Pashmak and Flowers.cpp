@@ -1,52 +1,37 @@
 // https://codeforces.com/problemset/problem/459/B
-// With sorting: https://codeforces.com/contest/459/submission/7460021
 #include <bits/stdc++.h>
 #define int long long
+#define For(i, n) for(int i = 0; i < n; i++)
 using namespace std;
 
-int32_t main()
+main()
 {
     ios::sync_with_stdio(0);
+    cin.tie(0);
+
     int n;
     cin >> n;
+    int a[n];
+    For(i, n)
+        cin >> a[i];
 
-    int maxi = INT_MIN;
-    int mini = INT_MAX;
-    int maxcount = 1;
-    int mincount = 1;
-    int a;
-
-    for (int i = 0; i < n; i++)
+    int mx = *max_element(a, a + n);
+    int mn = *min_element(a, a + n);
+    if (mx == mn)
     {
-        cin >> a;
-        if (a < mini)
-        {
-            mincount = 1;
-            mini = a;
-        }
-        else if (a == mini)
-        {
-            mincount++;
-        }
-
-        if (a > maxi)
-        {
-            maxcount = 1;
-            maxi = a;
-        }
-        else if (a == maxi)
-        {
-            maxcount++;
-        }
+        cout << 0 << " " << n * (n - 1) / 2; // e.g. input: [1, 1, 1, 1, 1]
+        return 0;
     }
 
-    cout << maxi - mini << " ";
+    int l = 0, r = 0;
+    For(i, n)
+    {
+        l += (a[i] == mn);
+        r += (a[i] == mx);
+    }
 
-    if (maxi == mini)
-        // Sum of "n" Consecutive Integers (1+2+3+...+n)
-        cout << n * (n - 1) / 2;
-    else
-        cout << maxcount * mincount;
+    cout << mx - mn << " " << l * r;
+    return 0;
 }
 
-// TODO
+// combinatorics
