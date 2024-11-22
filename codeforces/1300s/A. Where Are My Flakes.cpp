@@ -22,3 +22,5 @@ int main()
     int diff = r - l + 1;
     cout << (diff > 0 ? diff : -1);
 }
+
+// two pointers

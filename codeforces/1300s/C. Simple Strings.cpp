@@ -7,7 +7,7 @@ main()
     string str;
     cin >> str;
 
-    char c[] = {'a', 'b', 'c'};
+    char c[] = { 'a', 'b', 'c' };
     for (int i = 1; i < str.size(); i++)
     {
         if (str[i - 1] != str[i])
@@ -27,3 +27,7 @@ main()
 // since it's undefined behavior due to accessing array out of bounds.
 // Here it works returning 0 consistently, so I guess it's fine only for the sake of this exercise.
 // https://stackoverflow.com/questions/1239938/accessing-an-array-out-of-bounds-gives-no-error-why
+
+// dp
+// greedy
+// strings

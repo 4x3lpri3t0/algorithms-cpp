@@ -27,3 +27,6 @@ int main()
     // 2. Even number of odds
     cout << (odds > 0 && odds % 2 == 0 ? "Second" : "First");
 }
+
+// games
+// greedy

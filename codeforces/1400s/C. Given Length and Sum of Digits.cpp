@@ -2,12 +2,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int m, s;
-
 int main()
 {
     ios::sync_with_stdio(0);
 
+    int m, s;
     cin >> m >> s;
 
     // Smallest
@@ -38,3 +37,6 @@ int main()
 
     cout << res1 << ' ' << res2 << endl;
 }
+
+// dp
+// greedy

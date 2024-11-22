@@ -26,10 +26,9 @@ main()
 
     cout << flicksReceived << "\n";
 
+    // Maximize Ws
     int flicksGiven = 0;
     maxIdx = 0;
-
-    // Maximize Ws
     for (int i = 0; i < n; i++)
     {
         if (M[maxIdx] > S[i])
@@ -41,3 +40,8 @@ main()
 
     cout << flicksGiven;
 }
+
+// data structures
+// dp
+// greedy
+// sortings

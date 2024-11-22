@@ -4,7 +4,7 @@ using namespace std;
 
 int aStrBalance = 0, validCount = 0, totalCount = 0;
 
-void dpTest(string &str, int i, int pos)
+void dpTest(string& str, int i, int pos)
 {
     if (i == str.size())
     {
@@ -33,3 +33,9 @@ int main()
 
     return 0;
 }
+
+// bitmasks
+// combinatorics
+// dp
+// math
+// probabilities

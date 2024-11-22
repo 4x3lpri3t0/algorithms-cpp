@@ -142,6 +142,13 @@ for (int i = 0; i < n; i++)
 }
 ```
 
+### Read int vector (pairs)
+```cpp
+vector<pair<int, int>> v(n);
+for (int i = 0; i < n; i++)
+    cin >> v[i].first >> v[i].second;
+```
+
 ### Get index of char in string
 ```cpp
 int idx = str.find(c);
