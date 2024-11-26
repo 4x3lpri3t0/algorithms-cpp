@@ -47,7 +47,8 @@
 				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}\\currentFile.exe"
+				"${fileDirname}\\currentFile.exe",
+				"-std=c++23"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
