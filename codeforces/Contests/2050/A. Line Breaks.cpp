@@ -1,8 +1,6 @@
-// https://codeforces.com/contest/2050/problem/0
+// https://codeforces.com/contest/2050/problem/A
 // DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
-#define Error {cout<<-1;return 0;}
-#define int long long
 using namespace std;
 
 main()

@@ -10,6 +10,7 @@ main()
     int t;
     cin >> t;
     vector<int> ks(t);
+
     // The first line of n-values is ignored in the context of this problem (only depends on the k-values)
     for (int _ = 0; _ < 2; _++)
         for (int i = 0; i < t; i++)
@@ -24,3 +25,8 @@ main()
     for (int k : ks)
         cout << ans[k] << '\n';
 }
+
+// !
+// combinatorics
+// dp
+// math

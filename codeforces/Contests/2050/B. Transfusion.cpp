@@ -1,4 +1,4 @@
-// 
+// https://codeforces.com/contest/2050/problem/B
 // DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 #define int long long
@@ -35,3 +35,6 @@ main()
             cout << "NO" << endl;
     }
 }
+
+// greedy
+// math

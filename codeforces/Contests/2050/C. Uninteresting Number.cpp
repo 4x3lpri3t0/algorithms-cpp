@@ -1,30 +1,28 @@
 // https://codeforces.com/contest/2050/problem/C
 // DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
-// Math property: A number is divisible by 9 if the sum of its digits is divisible by 9.
+// Divisibility Rule of 9: A number is divisible by 9 if the sum of its digits is divisible by 9.
 
-bool canBeDivBy9(int n) {
-    int sum = 0, count2 = 0, count3 = 0;
+bool canBeDivBy9(string s)
+{
+    int sum = 0, cnt2 = 0, cnt3 = 0;
 
     // Compute sum of digits and count 2s and 3s
-    while (n != 0)
+    for (char c : s)
     {
-        int digit = n % 10;
-        n /= 10;
-        sum = (sum + digit) % 9;
-        if (digit == 2)
-            count2++;
-        else if (digit == 3)
-            count3++;
+        sum += (c - '0');
+        if (c == '2')
+            cnt2++;
+        if (c == '3')
+            cnt3++;
     }
 
     // Try to adjust the remainder using 2s and 3s
-    for (int use2 = 0; use2 <= count2; use2++)
+    for (int use2 = 0; use2 <= min(10, cnt2); use2++)
     {
-        for (int use3 = 0; use3 <= count3; use3++)
+        for (int use3 = 0; use3 <= min(10, cnt3); use3++)
         {
             // Calculate the new sum after replacements
             int newSum = sum + use2 * 2 + use3 * 6; // diff between squares (2 -> 4, and 3 -> 9)
@@ -45,11 +43,10 @@ main()
     cin >> TC;
     while (TC--)
     {
-        int n;
-        cin >> n;
-        cout << (canBeDivBy9(n) ? "YES" : "NO") << endl;
+        string s;
+        cin >> s;
+        cout << (canBeDivBy9(s) ? "YES" : "NO") << endl;
     }
 }
 
-// TODO (WA)
 // Math

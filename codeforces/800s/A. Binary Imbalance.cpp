@@ -8,7 +8,7 @@ int main()
     int T, n;
     cin >> T;
 
-    while ( T-- > 0)
+    while (T-- > 0)
     {
         cin >> n;
         bool hasAtLeastOneZero = false;
@@ -23,6 +23,6 @@ int main()
             }
         }
 
-        cout << ( hasAtLeastOneZero ? "YES" : "NO" ) << endl;
+        cout << (hasAtLeastOneZero ? "YES" : "NO") << endl;
     }
 }
