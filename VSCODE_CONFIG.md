@@ -138,10 +138,13 @@
 			"vectorread"
 		],
 		"body": [
-			"int input;",
+			"int x;",
 			"vector<int> a;",
-			"while (cin >> input)",
-			"    a.push_back(input);",
+			"for (int i = 0; i < n; i++)",
+			"{",
+			"    cin >> x;",
+			"    a.push_back(x);",
+			"}",
 			"",
 			"$0"
 		],
