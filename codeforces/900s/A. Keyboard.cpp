@@ -1,4 +1,5 @@
 // http://codeforces.com/contest/474/problem/A
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;
@@ -8,6 +9,7 @@ int32_t main()
     string kb = "qwertyuiopasdfghjkl;zxcvbnm,./";
 
     ios::sync_with_stdio(0);
+    cin.tie(0);
     string dir;
     cin >> dir;
 

@@ -1,4 +1,5 @@
 // https://codeforces.com/problemset/problem/1042/B
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 const int INF = 1e9;

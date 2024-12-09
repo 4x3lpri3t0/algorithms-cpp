@@ -1,4 +1,5 @@
 // https://codeforces.com/problemset/problem/313/B
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,7 +10,7 @@ main()
     int n;
     cin >> n;
 
-    int *dp = new int[s.size() + 1];
+    int* dp = new int[s.size() + 1];
     dp[0] = 0;
     for (int i = 1; i < s.size(); i++)
     {

@@ -1,5 +1,6 @@
 // https://codeforces.com/contest/2025/problem/B
 // https://codeforces.com/blog/entry/135173
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 

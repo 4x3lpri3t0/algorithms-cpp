@@ -1,5 +1,6 @@
 // http://codeforces.com/problemset/problem/552/B
 // Tutorial: http://codeforces.com/blog/entry/18696
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;
@@ -7,6 +8,7 @@ using namespace std;
 main()
 {
     ios::sync_with_stdio(0);
+    cin.tie(0);
 
     int n;
     cin >> n;

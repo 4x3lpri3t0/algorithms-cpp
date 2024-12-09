@@ -1,15 +1,16 @@
 // https://codeforces.com/problemset/problem/1521/A
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
     ios::sync_with_stdio(0);
-    
-    int t;
-    cin >> t;
+    cin.tie(0);
 
-    while (t--)
+    int TC;
+    cin >> TC;
+    while (TC--)
     {
         long long a, b;
         cin >> a >> b;

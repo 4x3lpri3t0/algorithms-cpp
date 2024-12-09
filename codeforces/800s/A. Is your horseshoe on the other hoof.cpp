@@ -1,4 +1,5 @@
 // https://codeforces.com/problemset/problem/228/A
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +12,7 @@ main()
     cin >> s1 >> s2 >> s3 >> s4;
 
     set<int> shoes;
-    shoes.insert({s1, s2, s3, s4});
+    shoes.insert({ s1, s2, s3, s4 });
 
     cout << 4 - shoes.size();
 }

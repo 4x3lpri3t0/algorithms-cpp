@@ -54,7 +54,7 @@ while (TC--)
 ```cpp
 int a[n];
 for (int i = 0; i < n; i++)
-	cin >> a[i];
+    cin >> a[i];
 ```
 
 ### Int vector (pairs)
@@ -160,7 +160,7 @@ void print_vector(vector<int> v)
 ```cpp
 int idx = str.find(c);
 if (idx != string::npos)
-	cout << "Found";
+    cout << "Found";
 ```
 
 ## Sorting

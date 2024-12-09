@@ -1,4 +1,5 @@
 // https://codeforces.com/problemset/problem/363/B
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -13,7 +14,7 @@ main()
         a.push_back(input);
 
     // Precompute first idx
-    int *dp = new int[n - k + 1];
+    int* dp = new int[n - k + 1];
     for (int i = 0; i < k; i++)
         dp[0] += a[i];
 

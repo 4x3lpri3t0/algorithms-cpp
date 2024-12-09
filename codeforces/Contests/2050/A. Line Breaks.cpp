@@ -10,7 +10,6 @@ main()
 
     int TC, n, m;
     cin >> TC;
-
     while (TC--)
     {
         cin >> n >> m;

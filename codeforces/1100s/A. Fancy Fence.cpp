@@ -8,9 +8,9 @@ main()
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    int t, a;
-    cin >> t;
-    while (t--)
+    int TC, a;
+    cin >> TC;
+    while (TC--)
     {
         cin >> a;
         a = 180 - a;

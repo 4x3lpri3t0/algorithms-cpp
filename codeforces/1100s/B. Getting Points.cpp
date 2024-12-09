@@ -1,4 +1,5 @@
 // https://codeforces.com/contest/1902/problem/B
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,11 +1,13 @@
 // https://codeforces.com/problemset/problem/476/A
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
     ios::sync_with_stdio(0);
-    
+    cin.tie(0);
+
     int n, m;
     cin >> n >> m;
 
@@ -20,7 +22,8 @@ int main()
     // If we exceed n steps, it's not possible to satisfy the conditions
     if (minMoves > n) {
         cout << -1 << endl;
-    } else {
+    }
+    else {
         cout << minMoves << endl;
     }
 

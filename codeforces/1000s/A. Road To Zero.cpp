@@ -1,16 +1,18 @@
 // https://codeforces.com/problemset/problem/1342/A
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
     ios::sync_with_stdio(0);
+    cin.tie(0);
 
-    int T;
     long long x, y, a, b;
-    cin >> T;
 
-    while ( T-- > 0)
+    int TC;
+    cin >> TC;
+    while (TC--)
     {
         long long ans = 0;
 

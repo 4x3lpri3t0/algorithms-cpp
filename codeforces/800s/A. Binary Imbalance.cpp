@@ -1,14 +1,16 @@
 // https://codeforces.com/contest/1902/problem/A
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
     ios::sync_with_stdio(0);
-    int T, n;
-    cin >> T;
+    cin.tie(0);
 
-    while (T-- > 0)
+    int TC, n;
+    cin >> TC;
+    while (TC--)
     {
         cin >> n;
         bool hasAtLeastOneZero = false;

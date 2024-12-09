@@ -1,4 +1,5 @@
 // https://codeforces.com/contest/2025/problem/A
+// DISCLAIMER: This is NOT production-quality code.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,11 +9,10 @@ main()
     cin.tie(0);
 
     int TC;
-    string s, t;
     cin >> TC;
-
     while (TC--)
     {
+        string s, t;
         cin >> s >> t;
 
         int commonCount = 0;
