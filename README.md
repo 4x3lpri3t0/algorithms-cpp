@@ -1,6 +1,4 @@
-# algorithms-cpp
-
-## Disclaimer
+# Disclaimer
 
 This repository serves as a personal space for experimentation and practice, and it is not representative of my professional coding standards. It primarily houses solutions to math problems, algorithms, and competitive programming exercises that I use to enhance my problem-solving capabilities.
 
@@ -12,7 +10,17 @@ In this context, I prioritize developer speed and efficiency over strict adheren
 
 The indiscriminate use of macros like `#define int long long` is also a poor practice that should not be applied in production.
 
-## Competitive Programming Tricks
+# Competitive Programming Tricks/Hacks
+
+## Input/Output
+
+### Fast input
+[Source](https://www.geeksforgeeks.org/fast-io-for-competitive-programming/)
+```cpp
+ios::sync_with_stdio(0);
+cin.tie(0);
+// ...
+```
 
 ### Output to output.txt
 To redirect the standard input and output streams from your program into a file named `output.txt` (works for both `cout` and `printf`):
@@ -32,19 +40,54 @@ int main()
 }
 ```
 
-### Fast input hack
+## Common Data Structures - Read
+
+### Read TestCases until TC is 0
 ```cpp
-// https://www.geeksforgeeks.org/fast-io-for-competitive-programming/
-ios::sync_with_stdio(0);
-cin.tie(0);
-// (...)
+int TC;
+cin >> TC;
+while (TC--)
+    // ...
 ```
 
-### int as long (hack)
+### Int array ('readintarr')
 ```cpp
-// **DO NOT use this for production code**
-#define int long long
-// Then if you also need to use an actual int as part of the same exercise, use int32_t (e.g. `int32_t main()`)
+int a[n];
+for (int i = 0; i < n; i++)
+	cin >> a[i];
+```
+
+### Int vector (pairs)
+```cpp
+vector<pair<int, int>> v(n);
+for (int i = 0; i < n; i++)
+    cin >> v[i].first >> v[i].second;
+```
+
+### String array (ignore some words)
+E.g. `A_Where_Are_My_Flakes.cpp`
+```cpp
+string _, t;
+int k;
+cin >> _ >> _ >> t >> _ >> k; // We're only interested in t and k
+```
+
+### String array (unknown amount of words)
+E.g. `11586_Train Tracks.cpp`
+```cpp
+string s;
+getline(cin, s); // e.g. MM FF MF FM
+int len = s.size();
+for (int i = 0; i < len; i++)
+    // ...
+```
+
+## Common Data Structures - Init
+
+### Adjacency List (graph representation)
+```cpp
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
 ```
 
 ### Dynamic Programming
@@ -54,11 +97,49 @@ memset(dp, -1, sizeof(dp));
 dp[0] = 0;
 ```
 
-### Adjacency List (graph representation)
+### Array zeroes
 ```cpp
-typedef pair<int, int> ii;
-typedef vector<ii> vii;
+memset(a, 0, sizeof(a));
 ```
+
+### Bool array (set all elements `false`)
+```cpp
+bool myBoolArray[ARRAY_SIZE] = { 0 };
+```
+
+### Matrix (alt snippet: "readmatrix")
+```cpp
+cin >> n >> m;
+string row;
+vector<string> a(n);
+for (int i = 0; i < n; i++)
+{
+    cin >> row;
+    a.push_back(row);
+}
+```
+
+## Type Conversion
+
+### char to int
+E.g. `A. Ultra-Fast Mathematician.cpp`
+```cpp
+int n = s[i] - '0';
+```
+
+### int to char
+```cpp
+charMatrix[i][j] = char(n);
+```
+
+### int as long
+```cpp
+// **DO NOT use this for production code**
+#define int long long
+// Then if you also need to use an actual int as part of the same exercise, use int32_t (e.g. `int32_t main()`)
+```
+
+## Misc
 
 ### Join vector
 ```cpp
@@ -75,86 +156,14 @@ void print_vector(vector<int> v)
 }
 ```
 
-### Init array zeroes
-```cpp
-memset(a, 0, sizeof(a));
-```
-
-### Init bool array (set all elements `false`)
-```cpp
-bool myBoolArray[ARRAY_SIZE] = { 0 };
-```
-
-### Init matrix
-```cpp
-cin >> n >> m;
-vector<string> res(n);
-for (int i = 0; i < n; i++)
-{
-    string row;
-    cin >> row;
-    res.push_back(row);
-}
-```
-
-### Read string array + ignore some words (e.g. A_Where_Are_My_Flakes.cpp)
-```cpp
-string _, t;
-int k;
-cin >> _ >> _ >> t >> _ >> k; // We're only interested in t and k
-```
-
-### Read string array with unknown amount of words (e.g. 11586_Train Tracks.cpp)
-```cpp
-int N;
-scanf("%d", &N);
-getchar();
-while (N--)
-{
-    string s;
-    getline(cin, s); // e.g. MM FF MF FM
-    int len = s.size(); // Unknown length of string array
-    for (int i = 0; i < len; i++)
-    {
-        // ...
-    }
-}
-```
-
-### Read TestCases until TC is 0
-```cpp
-int TC;
-cin >> TC;
-while (TC--)
-{
-    string S;
-    cin >> S;
-    // ...
-}
-```
-
-### Read int array ('readintarr')
-```cpp
-int a[n];
-for (int i = 0; i < n; i++)
-{
-	cin >> a[i];
-}
-```
-
-### Read int vector (pairs)
-```cpp
-vector<pair<int, int>> v(n);
-for (int i = 0; i < n; i++)
-    cin >> v[i].first >> v[i].second;
-```
-
 ### Get index of char in string
 ```cpp
 int idx = str.find(c);
 if (idx != string::npos)
 	cout << "Found";
 ```
+
+## Sorting
 
 ### Sort array
 ```cpp
@@ -171,16 +180,20 @@ sort(S.begin(), S.end());
 sort(S.begin(), S.end(), greater<int>());
 ```
 
-### (STL) Max Element / Min Element (e.g. B. Pashmak and Flowers.cpp)
+## STL
+
+### Max Element / Min Element
+E.g. `B. Pashmak and Flowers.cpp`
 ```cpp
 int mx = *max_element(a, a + n);
 int mn = *min_element(a, a + n);
 ```
 
-### (STL) Permutations (e.g. B. Shower Line.cpp)
+### Permutations
+E.g. `B. Shower Line.cpp`
 ```cpp
 int line[N] = { ... };
 do {
-    // (...)
+    // ...
 } while (next_permutation(line, line + N));
 ```

@@ -150,6 +150,23 @@
 		],
 		"description": "Competitive Programming template."
 	},
+	"Competitive Programming - Read Matrix": {
+		"prefix": [
+			"readmatrix",
+			"matrixread"
+		],
+		"body": [
+			"int n, m;",
+			"cin >> n >> m;",
+			"",
+			"string a[n];",
+			"for (int i = 0; i < n; i++)",
+        	"    cin >> a[i];",
+			"",
+			"$0"
+		],
+		"description": "Competitive Programming template."
+	},
 	"Competitive Programming - Main": {
 		"prefix": [
 			"maincp",
