@@ -193,3 +193,22 @@ do {
     // ...
 } while (next_permutation(line, line + N));
 ```
+
+## Aliases for `.bashrc` (NOT for production!)
+`code ~/.bashrc` + `source ~/.bashrc`
+```bash
+alias ls='ls -F --color --show-control-chars'
+alias gs='git status'
+alias ga='git add '
+alias gaa='git add -A'
+commitPush() { git add . && git commit -m "$1" && git push; }
+alias gcm=commitPush
+alias yolo='gcm "Daily programming practice"'
+
+# Careful! Will remove unpushed commits as well
+alias reset='git reset --hard origin/main && git clean -fd'
+
+alias pl='git pull -r'
+alias push='git push'
+alias go='git checkout'
+```
