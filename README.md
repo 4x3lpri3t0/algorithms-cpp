@@ -22,23 +22,19 @@ cin.tie(0);
 // ...
 ```
 
-### Output to output.txt
+### Input from input.txt / Output to output.txt
 To redirect the standard input and output streams from your program into a file named `output.txt` (works for both `cout` and `printf`):
 ```cpp
 int main()
 {
-    std::streambuf *coutbuf = std::cout.rdbuf();    // Save old buffer
-    char* tempFileName = "output.txt";
-    std::ofstream out(tempFileName);
-    std::cout.rdbuf(out.rdbuf());                   // Redirect std::cout to file
-    freopen(tempFileName, "w", stdout);             // Redirect stdout to file
-
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+#endif
     // ...
-
-    std::cout.rdbuf(coutbuf);                       // Restore the original buffer
-    freopen("/dev/tty", "w", stdout);               // Restore stdout to the console
 }
 ```
+NOTE: Some Codeforces problems actually require `input.txt` & `output.txt`. In those cases the `#ifndef` preprocessor conditional directive should be removed.
 
 ## Common Data Structures - Read
 

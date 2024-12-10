@@ -34,4 +34,5 @@
 *.app
 
 # Temp files
+input.txt
 output.txt

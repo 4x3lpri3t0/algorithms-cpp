@@ -165,9 +165,9 @@
 			"",
 			"$0"
 		],
-		"description": "Competitive Programming template."
-	},
-	"Competitive Programming - Main": {
+		"dsdaescription": "Competitive Programming template."
+ },
+ "Competitive Programming - Main": {
 		"prefix": [
 			"maincp",
 			"cpmain"
@@ -180,14 +180,29 @@
 			"#define int long long",
 			"using namespace std;",
 			"",
+			"void solve()",
+			"{",
+			"\tint ans = 0, n;",
+			"\tcin >> n;${0}",
+			"\t",
+			"\tcout << ans << endl;",
+			"}",
+			"",
 			"main()",
 			"{",
 			"\tios::sync_with_stdio(0);",
 			"\tcin.tie(0);",
 			"\t",
-			"\tint n;",
-			"\tcin >> n;${0}",
-			"}"
+			"#ifndef ONLINE_JUDGE",
+			"\tfreopen(\"input.txt\", \"r\", stdin);",
+			"\tfreopen(\"output.txt\", \"w\", stdout);",
+			"#endif",
+			"\t",
+			"\tint TC;",
+			"\tcin >> TC;",
+			"\twhile (TC--)",
+			"\t\tsolve();",
+			"}",
 		],
 		"description": "Competitive Programming (main) template."
 	},
