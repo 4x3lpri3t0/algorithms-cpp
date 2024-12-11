@@ -26,7 +26,7 @@ NOTE: Some Codeforces problems actually require `input.txt` & `output.txt`. In t
 
 ## Test Case Loops
 
-### Basic Test Case Loop
+### Basic Loop
 ```cpp
 int TC;
 cin >> TC;
@@ -42,21 +42,22 @@ while (true)
     int x;
     cin >> x;
     if (x == 0)
-        break; // Sentinel value
+        break; // Sentinel value ends the loop
     // ...
 }
 ```
 
 ## Input Reading
 
-### Read an Array (snippet: `readintarr`)
+### Read Int Array
+Snippet: `readintarr`
 ```cpp
 int a[n];
 for (int i = 0; i < n; i++)
     cin >> a[i];
 ```
 
-### Read a Vector of Pairs
+### Read Vector of Pairs
 ```cpp
 vector<pair<int, int>> v(n);
 for (int i = 0; i < n; i++)
@@ -80,7 +81,7 @@ while (cin >> x)
     v.push_back(x);
 ```
 
-### String array (unknown amount of words)
+### Read Unknown Amount of Words
 E.g. `11586_Train Tracks.cpp`
 ```cpp
 string s;
@@ -140,10 +141,10 @@ charMatrix[i][j] = char(n);
 ```
 
 ### int as long
+**DO NOT use this for production code**: Redefining `int` for the entire program can be very inefficient and potentially dangerous. This hack only makes sense in the context of Competitive Programming problems. Use `int64_t` instead.
 ```cpp
-// **DO NOT use this for production code**
 #define int long long
-// Then if you also need to use an actual int as part of the same exercise, use int32_t (e.g. `int32_t main()`)
+// Then can use `int32_t` for actual `int` values if needed.
 ```
 
 ## String Manipulation
@@ -158,11 +159,22 @@ for (char c : s)
 
 ### Tokenize a String
 Splitting a string into words based on delimiters.
+
+### Example 1
 ```cpp
 string s = "word1 word2 word3";
 stringstream ss(s);
 string word;
 while (ss >> word)
+    // ...
+```
+
+### Example 2
+```cpp
+string s = "word1,word2,word3";
+stringstream ss(s);
+string word;
+while (getline(ss, word, ','))  // Use comma as delimiter
     // ...
 ```
 
@@ -173,7 +185,7 @@ if (idx != string::npos)
     cout << "Found";
 ```
 
-## Misc
+## Output Formatting
 
 ### Join vector
 ```cpp

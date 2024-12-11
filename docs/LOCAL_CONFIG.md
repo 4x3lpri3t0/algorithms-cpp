@@ -231,9 +231,9 @@
 ```
 
 # Bash Aliases
-For `.bashrc` (NOT for production!)
-Update: `code ~/.bashrc`
-Refresh: `source ~/.bashrc`
+
+Update `.bashrc` file:
+<br>`code ~/.bashrc`
 ```bash
 alias ls='ls -F --color --show-control-chars'
 alias gs='git status'
@@ -250,3 +250,5 @@ alias pl='git pull -r'
 alias push='git push'
 alias go='git checkout'
 ```
+Then refresh:
+<br>`source ~/.bashrc`

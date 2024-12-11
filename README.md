@@ -13,8 +13,8 @@ The indiscriminate use of macros like `#define int long long` is also a poor pra
 # Documentation
 
 ## Config
-[Local Configuration](docs/LOCAL_CONFIG.md)
+* [Local Configuration](docs/LOCAL_CONFIG.md)
 
 ## Competitive Programming Snippets
-[Snippets - Algorithms & Data Structures](docs/SNIPPETS_ALGORITHMS&DS.md)
-[Snippets - Misc](docs/SNIPPETS.md)
+* [Snippets - Algorithms & Data Structures](docs/SNIPPETS_ALGORITHMS&DS.md)
+* [Snippets - Misc](docs/SNIPPETS.md)
