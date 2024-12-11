@@ -35,7 +35,7 @@ while (TC--)
 ```
 
 ### Terminate on Input (Sentinel)
-Useful for problems with indefinite input (e.g., until EOF or a specific value).
+Useful for problems with indefinite input (e.g. until EOF or a specific value).
 ```cpp
 while (true)
 {
@@ -65,7 +65,8 @@ for (int i = 0; i < n; i++)
 ```
 
 ### Read and Ignore Specific Words
-For problems requiring selective input parsing (e.g. `A_Where_Are_My_Flakes.cpp`).
+For problems requiring selective input parsing.
+<br>E.g. `A_Where_Are_My_Flakes.cpp`
 ```cpp
 string _, t;
 int k;
@@ -228,6 +229,13 @@ sort(v.begin(), v.end(), [](pair<int, int> &a, pair<int, int> &b)
 ```
 
 ## STL
+
+### Array Sum
+[GeeksForGeeks](https://www.geeksforgeeks.org/array-sum-in-cpp-stl/)
+<br>E.g. `B. Roma and Changing Signs.cpp` 
+```cpp
+cout << accumulate(a, a + n, 0);
+```
 
 ### Lower/Upper Bound
 ```cpp

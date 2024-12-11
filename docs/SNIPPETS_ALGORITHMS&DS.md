@@ -15,28 +15,24 @@ for (int mask = 0; mask < (1 << n); mask++)
 
 ## DSU (Disjoint Set Union) / Union-Find
 Used to determine connected components.
+<br>E.g. `A. Learning Languages.cpp`
+<br>[Union Find in 5 minutes](https://www.youtube.com/watch?v=ayW5B2W9hfo&t=20s)
 ```cpp
 class DSU
 {
     vector<int> parent, rank;
 
 public:
-    DSU(int n)
+    DSU(int n) : parent(n), rank(n, 0)
     {
-        parent.resize(n);
-        rank.resize(n, 0);
         for (int i = 0; i < n; i++)
-        {
             parent[i] = i;
-        }
     }
 
     int find(int u)
     {
         if (u != parent[u])
-        {
             parent[u] = find(parent[u]); // Path compression
-        }
         return parent[u];
     }
 
@@ -47,14 +43,12 @@ public:
         if (u != v)
         {
             if (rank[u] < rank[v])
-            {
                 swap(u, v);
-            }
+
             parent[v] = u;
+
             if (rank[u] == rank[v])
-            {
                 rank[u]++;
-            }
         }
     }
 };
