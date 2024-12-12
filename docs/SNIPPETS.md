@@ -131,9 +131,11 @@ for (int i = 0; i < n; i++)
 ## Type Conversion
 
 ### char to int
-E.g. `A. Ultra-Fast Mathematician.cpp`
+E.g. `A. Ultra-Fast Mathematician.cpp`, `A. Chewbaсca and Number.cpp`
 ```cpp
 int n = s[i] - '0';
+// ...
+ans += to_string(n);
 ```
 
 ### int to char
