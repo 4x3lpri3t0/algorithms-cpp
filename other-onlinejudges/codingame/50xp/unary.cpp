@@ -1,3 +1,4 @@
+// https://www.codingame.com/ide/puzzle/unary
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -20,9 +21,7 @@ int main()
     for (int i = 1; i < binary.length(); i++)
     {
         if (binary[i] == prev)
-        {
             amount++;
-        }
         else
         {
             result += prev == '1' ? " 0 " : " 00 ";

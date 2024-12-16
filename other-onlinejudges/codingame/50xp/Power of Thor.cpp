@@ -1,3 +1,4 @@
+// https://www.codingame.com/ide/puzzle/power-of-thor
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,4 @@
+// https://www.codingame.com/ide/puzzle/1d-bush-fire
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,15 +1,7 @@
 // TODO
-
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-
+// https://www.codingame.com/ide/puzzle/code-vs-zombies
+#include <bits/stdc++.h>
 using namespace std;
-
-/**
- * Save humans, destroy zombies!
- **/
 
 int main()
 {
@@ -18,7 +10,7 @@ int main()
         int x;
         int y;
         cin >> x >> y; cin.ignore();
-        
+
         int human_count;
         cin >> human_count; cin.ignore();
         for (int i = 0; i < human_count; i++) {
