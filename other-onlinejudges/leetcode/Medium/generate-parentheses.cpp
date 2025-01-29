@@ -1,8 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
 // https://leetcode.com/problems/generate-parentheses/
+
 class Solution
 {
 public:
-    void tryCombinations(int open, int close, vector<string> &res, string str)
+    void tryCombinations(int open, int close, vector<string>& res, string str)
     {
         if (open == 0 && close == 0)
         {

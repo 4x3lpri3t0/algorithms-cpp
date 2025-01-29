@@ -1,8 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
 // https://leetcode.com/problems/container-with-most-water/
+
 class Solution
 {
 public:
-    int maxArea(vector<int> &height)
+    int maxArea(vector<int>& height)
     {
         int maxArea = 0;
         int i = 0, j = height.size() - 1;

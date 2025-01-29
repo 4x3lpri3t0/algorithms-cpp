@@ -1,8 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
 // https://leetcode.com/problems/longest-common-prefix/
+
 class Solution
 {
 public:
-    string longestCommonPrefix(vector<string> &strs)
+    string longestCommonPrefix(vector<string>& strs)
     {
         string longestPrefix = strs[0];
 

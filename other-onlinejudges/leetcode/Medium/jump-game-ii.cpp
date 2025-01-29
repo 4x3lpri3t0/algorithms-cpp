@@ -1,8 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
 // https://leetcode.com/problems/jump-game-ii/
+
 class Solution
 {
 public:
-    int jump(vector<int> &nums)
+    int jump(vector<int>& nums)
     {
         int n = nums.size();
         int jumps = 0;

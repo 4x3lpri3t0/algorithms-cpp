@@ -1,4 +1,7 @@
+#include <bits/stdc++.h>
+using namespace std;
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
 class Solution
 {
 public:
@@ -8,7 +11,7 @@ public:
         if (digits.length() == 0)
             return combinations;
 
-        vector<string> letters = {"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        vector<string> letters = { "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
         combinations.push_back("");
 
         for (int i = 0; i < digits.length(); i++)

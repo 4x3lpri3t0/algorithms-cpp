@@ -1,22 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+// https://leetcode.com/problems/remove-nth-node-from-end-of-list
 
 // Definition for singly-linked list.
 struct ListNode
 {
     int val;
-    ListNode *next;
+    ListNode* next;
     ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
+    ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
 class Solution
 {
 public:
-    ListNode *removeNthFromEnd(ListNode *head, int n)
+    ListNode* removeNthFromEnd(ListNode* head, int n)
     {
         // Count all members in list
         int count = 0;
-        ListNode *curr = head;
+        ListNode* curr = head;
         while (curr != nullptr)
         {
             count++;
@@ -25,7 +28,7 @@ public:
 
         // Advance list up to n member
         curr = head;
-        ListNode *prev = nullptr;
+        ListNode* prev = nullptr;
         for (int i = 0; i < count - n; i++)
         {
             prev = curr;
